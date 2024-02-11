@@ -1,0 +1,28 @@
+{
+    "name": "arbeidskrav-1",
+    "version": "1.0.0",
+    "description": "Arbeidskrav 1 i FEU 23-25 - Javascript og API",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "test": "jest --watchAll"
+    },
+    "author": "Abebe Bediye",
+    "license": "MIT",
+    "dependencies": {
+        "module-alias": "^2.2.3"
+    },
+    "_moduleAliases": {
+        "@assignments": "./assignments/*"
+    },
+    "jest": {
+        "transform": {
+            "^.+\\.[t|j]sx?$": "babel-jest"
+        }
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.23.9",
+        "babel-jest": "^29.7.0",
+        "jest": "^29.7.0"
+    }
+}
