@@ -15,14 +15,14 @@ describe("Oppgave 07", () => {
         expect(result).toEqual(expected);
     });
 
-    it.skip("Dekrypter melding med Cease cypher", () => {
+    it("Dekrypter melding med Cease cypher", () => {
         // arrange
         const message = "Mhj hu hq Dzhvrph surjudphuhu!";
 
         const expected = "Jeg er en Awesome programerer!";
 
         // act
-        const result = decrypt(message);
+        const result = decrypt(message, 3);
 
         // assert
         expect(result).toEqual(expected);
